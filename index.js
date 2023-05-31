@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer-core";
+import puppeteer from "puppeteer";
 
 const proxies = [
   "http://103.216.103.163:80",
@@ -10,8 +10,8 @@ const trendOnDextools = async (proxy) => {
   const browser = await puppeteer.launch({
     headless: false,
     //args: [`--proxy-server=${proxy}`],
-    executablePath: executablePath(),
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    // executablePath: executablePath(),
+    // args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const page = await browser.newPage();
