@@ -10,6 +10,7 @@ const trendOnDextools = async (proxy) => {
   const browser = await puppeteer.launch({
     headless: false,
     //args: [`--proxy-server=${proxy}`],
+    executablePath: executablePath(),
   });
 
   const page = await browser.newPage();
