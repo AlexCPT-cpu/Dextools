@@ -11,6 +11,7 @@ const trendOnDextools = async (proxy) => {
     headless: false,
     //args: [`--proxy-server=${proxy}`],
     executablePath: executablePath(),
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const page = await browser.newPage();
