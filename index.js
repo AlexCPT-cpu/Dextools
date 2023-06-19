@@ -1,7 +1,7 @@
 import puppeteer from "puppeteer";
 
 const proxies = [
-  "http://103.216.103.163:80",
+  //  "http://103.216.103.163:80",
   "https://46.182.6.51:3129",
   "https://171.244.65.14:4002",
 ];
